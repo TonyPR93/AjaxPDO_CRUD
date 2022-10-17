@@ -1,0 +1,86 @@
+<!-- Add New -->
+<div id="add">
+	<h4 class="title_action">Ajouter</h4>
+	<form id="addForm">
+		<div>
+			<div>
+				<label>Firstname:</label>
+			</div>
+			<div>
+				<input type="text" name="firstname">
+			</div>
+		</div>
+		<div>
+			<div>
+				<label>Lastname:</label>
+			</div>
+			<div>
+				<input type="text" name="lastname">
+			</div>
+		</div>
+		<div>
+			<div>
+				<label>Address:</label>
+			</div>
+			<div>
+				<input type="text" name="address">
+			</div>
+		</div> 
+		<div class="modal-footer">
+			<button type="button" class="close">Annuler</button>
+			<button type="submit">Enregistrer</button>
+		</div>
+	</form>
+</div>
+<!-- Edit -->
+<div id="edit">
+	<div>
+		<h4 class="title_action">Editer</h4>
+	</div>
+	<form id="editForm">
+		<input type="hidden" class="id" name="id"> <!-- servira d'input pour l'id ( UPDATE... where id = x;), change a chaque click sur edit ou delete-->
+		<div>
+			<div>
+				<label>Firstname:</label>
+			</div>
+			<div>
+				<input type="text" class="firstname" name="firstname">
+			</div>
+		</div>
+		<div>
+			<div>
+				<label>Lastname:</label>
+			</div>
+			<div>
+				<input type="text" class="lastname" name="lastname">
+			</div>
+		</div>
+		<div>
+			<div>
+				<label>Address:</label>
+			</div>
+			<div>
+				<input type="text" class="address" name="address">
+			</div>
+		</div>
+		<div>
+			<button type="button" class="close">Annuler</button>
+			<button type="submit">Editer</button> <!--de type submit car y'a un form-->
+		</div>
+	</form>
+</div>
+
+<!-- Delete -->
+<div id="delete">
+	<div>
+		<h4 class="title_action">Effacer</h4>
+	</div>
+	<div>	
+		<p>Voulez-vous supprimer ?</p>
+		<h2 class="fullname"></h2>
+	</div>
+	<div>
+		<button type="button" class="close">Non</button>
+		<button type="button" class="id">Oui</button> <!--aura une data-id apres getdetails(id)-->
+	</div>
+</div>

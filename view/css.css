@@ -1,0 +1,56 @@
+#container{
+    text-align: center;
+}
+
+#alert{
+    display: none;
+    position:absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left:0;
+    right:0;
+    bottom:10px;
+    /* border:1px red solid; */
+}
+
+#alert_content{
+    position:relative;
+    /* border:3px solid violet; */
+    padding: 20px 0px;
+}
+#table_content{
+    margin-top:20px;
+    margin: 0 auto;
+    /* border:1px solid black; */
+}
+
+
+
+/*Modal*/
+
+#add{
+    width: auto;
+    text-align: center;
+    /* border: 1px solid black; */
+    display:none;
+}
+
+#edit{
+    text-align: center;
+    display:none;
+}
+
+#delete{
+    text-align: center;
+    display:none;  
+}
+
+.close{
+    display: inline-block;
+    /* border:1px solid red; */
+}
+
+.title_action{
+    display:inline-block;
+    /* border:1px solid black; */
+}
